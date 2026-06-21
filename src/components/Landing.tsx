@@ -1,6 +1,7 @@
 import { PropsWithChildren } from "react";
 import "./styles/Landing.css";
 import { config } from "../config";
+import SocialIcons from "./SocialIcons";
 
 const Landing = ({ children }: PropsWithChildren) => {
   const nameParts = config.developer.fullName.split(" ");
@@ -21,12 +22,12 @@ const Landing = ({ children }: PropsWithChildren) => {
             </h1>
           </div>
           <div className="landing-info">
-            <h3>An</h3>
+            <h3>A</h3>
             <h2 className="landing-info-h2">
-              <div className="landing-h2-1">AI Engineer</div>
+              <div className="landing-h2-1">Web & Mobile</div>
             </h2>
             <h2>
-              <div className="landing-h2-info">Full-Stack Developer</div>
+              <div className="landing-h2-info">Developer</div>
             </h2>
           </div>
           {/* Mobile photo - shows only on mobile when 3D character is hidden */}
@@ -34,6 +35,7 @@ const Landing = ({ children }: PropsWithChildren) => {
             <img src="/images/mypicnbg.png" alt="Redoyanul Haque" />
           </div>
         </div>
+        <SocialIcons />
         {children}
       </div>
     </>

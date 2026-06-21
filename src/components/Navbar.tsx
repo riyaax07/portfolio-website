@@ -25,6 +25,11 @@ const Navbar = () => {
     // Start paused
     lenis.stop();
 
+    // Tell GSAP's ScrollTrigger about every Lenis scroll update — without this,
+    // ScrollTrigger works off stale scroll data and things like pinning,
+    // onEnter/onLeaveBack callbacks, etc. can misfire or not fire at all.
+    lenis.on("scroll", ScrollTrigger.update);
+
     // Handle smooth scroll animation frame
     function raf(time: number) {
       lenis?.raf(time);

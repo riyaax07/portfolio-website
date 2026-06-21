@@ -71,7 +71,7 @@ function RobotModel({ onLoaded }: { onLoaded: () => void }) {
       },
     });
     tl3.to(group.current.rotation, { y: -1.5, duration: 1 }, 0);
-    tl3.to(group.current.position, { x: 1.0, duration: 1 }, 0); 
+    tl3.to(group.current.position, { x: 1.0, duration: 1 }, 0);
     if (tl3.scrollTrigger) triggers.push(tl3.scrollTrigger);
 
     return () => {
@@ -92,6 +92,7 @@ function RobotModel({ onLoaded }: { onLoaded: () => void }) {
 const Robot = () => {
   const { setLoading } = useLoading();
   const progressRef = useRef<ReturnType<typeof setProgress> | null>(null);
+  const wrapperRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     // Start the same simulated progress counter the old character used
@@ -102,12 +103,32 @@ const Robot = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  // Once you scroll past "What I Do", lock the robot to the screen at its
+  // current spot using GSAP's real pin feature (pinType: "fixed" forces a
+  // genuine CSS position:fixed lock, rather than GSAP's default transform-based
+  // pin which can conflict with other transforms on the page).
+  // Scrolling back up above that point releases it to scroll normally again.
+  useEffect(() => {
+    if (!wrapperRef.current) return;
+    const pinTrigger = ScrollTrigger.create({
+      trigger: ".whatIDO",
+      start: "bottom top",
+      endTrigger: "body",
+      end: "bottom bottom",
+      pin: wrapperRef.current,
+      pinType: "fixed",
+      pinSpacing: false,
+      anticipatePin: 1,
+    });
+    return () => pinTrigger.kill();
+  }, []);
+
   const handleLoaded = () => {
     progressRef.current?.loaded();
   };
 
   return (
-    <div className="character-model robot-model">
+    <div className="character-model robot-model" ref={wrapperRef}>
       <Canvas camera={{ position: [0, 0.5, 4], fov: 45 }}>
         <ambientLight intensity={0.6} />
         <directionalLight position={[3, 5, 2]} intensity={1.2} />

@@ -58,7 +58,7 @@ const SocialIcons = () => {
   }, []);
 
   return (
-    <div className="icons-section">
+    <>
       <div className="social-icons" data-cursor="icons" id="social">
         <span>
           <a href={config.contact.github} target="_blank" rel="noopener noreferrer">
@@ -81,13 +81,15 @@ const SocialIcons = () => {
           </a>
         </span>
       </div>
-      <a className="resume-button" href="#">
-        <HoverLinks text="RESUME" />
-        <span>
-          <TbNotes />
-        </span>
-      </a>
-    </div>
+      <div className="icons-section">
+        <a className="resume-button" href="#">
+          <HoverLinks text="RESUME" />
+          <span>
+            <TbNotes />
+          </span>
+        </a>
+      </div>
+    </>
   );
 };
 

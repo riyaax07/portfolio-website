@@ -9,13 +9,15 @@
 }
 .social-icons {
   position: absolute;
-  left: -20px;
-  bottom: 20px;
+  left: 26px;
+  bottom: auto;
+  top: 50%;
+  transform: translateY(-50%);
   display: none;
   flex-direction: column;
-  gap: 8px;
-  z-index: 999;
-  padding: 10px;
+  gap: 22px;
+  z-index: 998;
+  padding: 0;
 }
 .social-icons:hover {
   transition: 0.3s;
@@ -26,8 +28,8 @@
   /* transform: scale(1.2); */
 }
 .social-icons span {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   position: relative;
   display: flex;
 }
@@ -84,10 +86,14 @@ div.resume-button span {
 @media only screen and (min-width: 900px) {
   .social-icons {
     display: flex;
-    gap: 20px;
+    gap: 30px;
   }
   .social-icons a {
-    font-size: 28px;
+    font-size: 26px;
+    color: #888;
+  }
+  .social-icons a:hover {
+    color: #fff;
   }
 }
 @media only screen and (min-width: 768px) {
