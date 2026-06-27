@@ -16,7 +16,6 @@ function RobotModel({ onLoaded }: { onLoaded: () => void }) {
   const reported = useRef(false);
 
   useEffect(() => {
-    // Model is in hand (useGLTF suspends until ready) — tell the loading screen we're done
     if (!reported.current) {
       reported.current = true;
       onLoaded();
@@ -29,12 +28,12 @@ function RobotModel({ onLoaded }: { onLoaded: () => void }) {
     };
   }, [actions, onLoaded]);
 
-  // Scroll-tied movement: rotates and shifts as you scroll through the page,
-  // mirroring how the original character reacted to the landing/about/whatIDO sections.
   useEffect(() => {
     if (!group.current) return;
     const triggers: ScrollTrigger[] = [];
 
+    // tl1: hero section — rotate robot and slide the whole div left (CSS %)
+    // exactly mirroring the original template's approach
     const tl1 = gsap.timeline({
       scrollTrigger: {
         trigger: ".landing-section",
@@ -45,41 +44,55 @@ function RobotModel({ onLoaded }: { onLoaded: () => void }) {
       },
     });
     tl1
-      .to(group.current.rotation, { y: 1.2, duration: 1 }, 0)
-      .to(group.current.position, { x: -2.0, duration: 1 }, 0);
+      .fromTo(group.current.rotation, { y: 0 }, { y: 0.7, duration: 1 }, 0)
+      .fromTo(".character-model", { x: 0 }, { x: "-25%", duration: 1 }, 0);
     if (tl1.scrollTrigger) triggers.push(tl1.scrollTrigger);
 
+    // tl2: about section — move camera-like z depth + slight rotation
     const tl2 = gsap.timeline({
       scrollTrigger: {
         trigger: ".about-section",
-        start: "top bottom",
+        start: "center 55%",
         end: "bottom top",
         scrub: true,
         invalidateOnRefresh: true,
       },
     });
-    tl2.to(group.current.position, { y: -1.5, z: -2, duration: 1 }, 0);
+    tl2
+      .to(group.current.rotation, { y: 0.92, x: 0.12, duration: 1 }, 0)
+      .fromTo(".character-model", { x: "-25%" }, { x: "-4%", duration: 1 }, 0);
     if (tl2.scrollTrigger) triggers.push(tl2.scrollTrigger);
 
+    // tl3: whatIDO — slide the WHOLE canvas div upward off-screen using CSS y%.
+    // This is exactly how the original template "stops" the character —
+    // it doesn't freeze a fixed element, it slides the box above the viewport.
+    // When you scroll back up, it slides back down naturally.
     const tl3 = gsap.timeline({
       scrollTrigger: {
         trigger: ".whatIDO",
-        start: "top bottom",
+        start: "top top",
         end: "bottom top",
         scrub: true,
         invalidateOnRefresh: true,
       },
     });
-    tl3.to(group.current.rotation, { y: -1.5, duration: 1 }, 0);
-    tl3.to(group.current.position, { x: 1.0, duration: 1 }, 0); 
+    tl3
+      .fromTo(
+        ".character-model",
+        { y: "0%" },
+        { y: "-100%", duration: 4, ease: "none", delay: 1 },
+        0
+      )
+      .to(group.current.rotation, { x: -0.04, duration: 2, delay: 1 }, 0);
     if (tl3.scrollTrigger) triggers.push(tl3.scrollTrigger);
 
     return () => {
       triggers.forEach((t) => t.kill());
+      // Reset CSS transforms so hot-reload doesn't leave stale values
+      gsap.set(".character-model", { clearProps: "all" });
     };
   }, []);
 
-  // Small idle wobble so it never looks fully frozen between scroll updates
   useFrame((state) => {
     if (group.current) {
       group.current.rotation.z = Math.sin(state.clock.elapsedTime) * 0.03;
@@ -94,7 +107,6 @@ const Robot = () => {
   const progressRef = useRef<ReturnType<typeof setProgress> | null>(null);
 
   useEffect(() => {
-    // Start the same simulated progress counter the old character used
     progressRef.current = setProgress((value) => setLoading(value));
     return () => {
       progressRef.current?.clear();
