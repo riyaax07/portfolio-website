@@ -7,7 +7,7 @@ export const config = {
     },
     social: {
         github: "riyaax07",
-        email: "your-email@example.com", // TODO: add your email
+        email: "riyamaurya1214@gmail.com", // TODO: add your email
         location: "Delhi NCR, India" // TODO: confirm/adjust
     },
     about: {
@@ -56,7 +56,7 @@ export const config = {
         { id: 8, title: "TODO: Project 8 Title", category: "TODO: Category", technologies: "TODO: Tech, Stack, Here", image: "/images/hektools.png", description: "TODO: describe this project." }
     ],
     contact: {
-        email: "your-email@example.com", // TODO
+        email: "riyamaurya1214@gmail.com", // TODO
         github: "https://github.com/riyaax07",
         linkedin: "https://linkedin.com/in/your-handle", // TODO
         twitter: "https://x.com/your-handle", // TODO: remove if not used
