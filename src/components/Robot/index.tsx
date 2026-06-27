@@ -11,7 +11,9 @@ gsap.registerPlugin(ScrollTrigger);
 
 function RobotModel({ onLoaded }: { onLoaded: () => void }) {
   const group = useRef<THREE.Group>(null);
-  const { scene, animations } = useGLTF("/models/RobotExpressive.glb");
+  const CDN = "https://raw.githubusercontent.com/mrdoob/three.js/dev/examples/models/gltf/RobotExpressive/RobotExpressive.glb";
+
+  const { scene, animations } = useGLTF(CDN);
   const { actions } = useAnimations(animations, group);
   const reported = useRef(false);
 
@@ -132,6 +134,5 @@ const Robot = () => {
   );
 };
 
-useGLTF.preload("/models/RobotExpressive.glb");
-
+useGLTF.preload("https://raw.githubusercontent.com/mrdoob/three.js/dev/examples/models/gltf/RobotExpressive/RobotExpressive.glb");
 export default Robot;
