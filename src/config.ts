@@ -99,7 +99,7 @@ export const config = {
   image: "/images/safeguard.png", // TODO: add a SafeGuard screenshot to public/images/
   description: "A parental monitoring app with a React dashboard and Chrome Extension. Parents pair with a child's browser via Supabase as a shared data layer, monitoring activity in real time." 
 },
-        { id: 2, title: "TODO: Project 2 Title", category: "TODO: Category", technologies: "TODO: Tech, Stack, Here", image: "/images/votechain.png", description: "TODO: describe this project." },
+        { id: 2, title: "HumSafar", category: "Full Stack", technologies: "React, TypeScript, Vite, Supabase, TailwindCSS", image: "/images/humsafar.png", description: "A smart family care application that simplifies remote caregiving through health tracking, reminders, and seamless communication" },
         { id: 3, title: "TODO: Project 3 Title", category: "TODO: Category", technologies: "TODO: Tech, Stack, Here", image: "/images/eie.png", description: "TODO: describe this project." },
         { id: 4, title: "TODO: Project 4 Title", category: "TODO: Category", technologies: "TODO: Tech, Stack, Here", image: "/images/gamekroy.png", description: "TODO: describe this project." },
         { id: 5, title: "TODO: Project 5 Title", category: "TODO: Category", technologies: "TODO: Tech, Stack, Here", image: "/images/redxchess.png", description: "TODO: describe this project." },
