@@ -1,96 +1,80 @@
-# 🚀 3D Developer Portfolio Website (React + TypeScript + Three.js)
+# 🚀 3D Developer Portfolio — Riya Maurya
 
-[![3D portfolio preview (click to watch video)](./Screenshot_2026-04-08_22-10-00.png)](./screen-capture%20(13).webm)
+An interactive 3D developer portfolio built with **React**, **TypeScript**, **Three.js**, and **GSAP** — featuring a scroll-animated 3D character model and smooth-scroll navigation.
 
-A modern, high-performance **3D developer portfolio website** built with **React**, **TypeScript**, **Three.js**, **GSAP**, and **WebGL**.
-
-If you’re a developer looking for a **portfolio template** that feels premium, interactive, and memorable—this repo is for you.
-
-> Live preview: https://www.redoyanulhaque.me/
+> Live: https://portfolio-website-peach-chi.vercel.app/
 
 ---
 
-## ✨ Highlights
+## ✨ Features
 
-- **3D / WebGL experience** powered by **Three.js**
-- Smooth animations with **GSAP**
-- Modern **React + TypeScript** codebase
-- Fast, responsive UI (desktop + mobile)
-- Designed for developers, engineers, programmers, and creators
+- **3D character model** rendered with React Three Fiber (`@react-three/fiber`, `@react-three/drei`)
+- **Scroll-driven animations** using GSAP ScrollTrigger, synced with Lenis smooth scroll
+- Custom navbar and stepper-based section navigation
+- Responsive across desktop and mobile
+- Deployed on Vercel
 
 ---
 
 ## 🧰 Tech Stack
 
-- **React**
-- **TypeScript**
-- **Three.js / WebGL**
-- **GSAP**
-- **HTML / CSS / JavaScript**
+| Category | Tools |
+|---|---|
+| Core | React, TypeScript, Vite |
+| 3D / WebGL | Three.js, React Three Fiber, React Three Drei |
+| Animation | GSAP (ScrollTrigger), Lenis |
+| Deployment | Vercel |
 
 ---
 
 ## 🚀 Getting Started
 
 ### 1) Clone
-
 ```bash
-git clone https://github.com/red1-for-hek/portfolio-website.git
+git clone https://github.com/riyaax07/portfolio-website.git
 cd portfolio-website
 ```
 
 ### 2) Install
-
 ```bash
 npm install
 ```
 
 ### 3) Run locally
-
 ```bash
 npm run dev
 ```
 
-### 4) Build
-
+### 4) Build for production
 ```bash
 npm run build
 ```
 
 ---
 
-## 🧩 Customize (Quick Guide)
+## 📁 Project Structure
 
-Typical things you’ll want to update:
-
-- **Your name + hero section text**
-- **Projects list**
-- **Social links** (GitHub, LinkedIn, email)
-- **SEO meta title/description**
+```
+├── src/            # React components, 3D scenes, animations
+├── public/         # Static assets
+├── api/            # Serverless functions (Vercel)
+└── vite.config.ts  # Vite configuration
+```
 
 ---
 
-## ⭐ Support
+## 🧩 Customize
 
-If you found this useful:
-
-- Please **star** the repository (it helps a lot)
-- Share it with a friend who needs a portfolio template
-- Sponsor via the **Sponsor** button on GitHub (if available in your region)
+- Update personal info, hero text, and project list in `src/config.ts`
+- Swap the 3D model by replacing the `.glb` file and updating the loader
+- Adjust scroll animation timing in the GSAP ScrollTrigger setup
 
 ---
 
 ## 🤝 Connect
 
-- LinkedIn: https://www.linkedin.com/in/red1-for-hek/
-
----
-
-## 🏷️ Recommended GitHub Topics (add in repo settings)
-
-Add these topics to improve GitHub search visibility:
-
-`portfolio` `developer-portfolio` `portfolio-website` `portfolio-template` `3d-portfolio` `react` `typescript` `threejs` `webgl` `gsap` `frontend` `vite`
+- GitHub: [@riyaax07](https://github.com/riyaax07)
+- LinkedIn: [riya-maurya](https://www.linkedin.com/in/riya-maurya-42b290309)
 
 ---
 
