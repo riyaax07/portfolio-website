@@ -124,35 +124,43 @@ export const config = {
     projects: [
         { 
             id: 1, 
-            title: "Portfolio Website", 
-            category: "Frontend & 3D Web", 
-            technologies: "React, TypeScript, Three.js, GSAP, Vercel", 
-            image: "/images/portfolio.png", 
-            description: "Engineered an interactive 3D portfolio application featuring 7 custom-animated scroll sections using Three.js and GSAP. Resolved 5+ deployment blockers and TypeScript strict-mode errors to achieve smooth 60 FPS rendering and production release on Vercel." 
+            title: "CmdBuddy", 
+            category: "Developer Tools / AI", 
+            technologies: "Python, AI, PowerShell", 
+            image: "/images/project-1.webp", 
+            description: "AI-powered PowerShell assistant that understands project context, explains terminal errors, and suggests safe commands for developers." 
         },
         { 
             id: 2, 
-            title: "Humsafar", 
-            category: "Full Stack & Realtime", 
-            technologies: "React, TypeScript, Supabase Realtime", 
-            image: "/images/humsafar.png", 
-            description: "Designed a location-sharing platform with 2 role-based modes enabling real-time check-ins between parents and children living apart. Synced live location and check-in status across 100+ users in real time using Supabase realtime channels." 
+            title: "SlothAudit", 
+            category: "Fintech / Audit Tool", 
+            technologies: "Python, FastAPI, React", 
+            image: "/images/project-2.webp", 
+            description: "Transaction auditing tool that detects duplicate charges, hidden subscriptions, unusual spending patterns, and billing discrepancies." 
         },
         { 
             id: 3, 
-            title: "SafeGuard", 
-            category: "Full Stack & Chrome Extension", 
-            technologies: "React, TypeScript, Supabase, Chrome Extension (Manifest V3)", 
-            image: "/images/safeguard.png", 
-            description: "Developed a 2 role-based parental monitoring dashboard and Chrome extension communicating via Supabase REST API. Migrated backend off a no-code platform to self-managed Supabase, implementing Row Level Security (RLS) and realtime sync across 10 tables." 
+            title: "AegisFraud", 
+            category: "Machine Learning / Security", 
+            technologies: "Python, Machine Learning, Streamlit", 
+            image: "/images/project-3.webp", 
+            description: "Machine learning-based credit card fraud detection system that identifies suspicious transactions and provides insights through an interactive dashboard." 
         },
         { 
             id: 4, 
-            title: "Human Activity Detection for Adaptive Surveillance Compression", 
-            category: "AI & Computer Vision", 
-            technologies: "Python, OpenCV, TensorFlow", 
-            image: "/images/project-1.webp", 
-            description: "Implemented an MVP that classifies more than 10 human activities in video frames using OpenCV and TensorFlow, laying groundwork for adaptive video compression. Debugged Windows-specific pipeline issues (FFmpeg PATH configuration) to ensure stable local frame processing." 
+            title: "HumSafar", 
+            category: "Family Care / Full Stack", 
+            technologies: "React, Firebase", 
+            image: "/images/humsafar.png", 
+            description: "Family care platform connecting people with their elderly parents through medicine reminders, health updates, and simplified video calling." 
+        },
+        { 
+            id: 5, 
+            title: "Safeguard – Parent Dashboard", 
+            category: "Parental Safety / Dashboard", 
+            technologies: "React, Supabase", 
+            image: "/images/safeguard.png", 
+            description: "A parental safety dashboard designed to help parents manage children's digital safety and protective controls." 
         }
     ],
     contact: {
