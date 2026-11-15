@@ -1,130 +1,178 @@
 export const config = {
     developer: {
         name: "Riya",
-        fullName: "Riya", // TODO: add your full name
+        fullName: "Riya Maurya",
         title: "Software Engineer | Open-Source Contributor",
-        description: "Software engineering student and open-source contributor (GSSoC'26). Building full-stack projects and exploring AI/ML, with a passion for clean, accessible UI." // TODO: tweak this
+        description: "Computer Science student at ABES Engineering College (2024–2028) and open-source contributor (GSSoC'26, OSCG'25). Building full-stack web and mobile apps, real-time platforms, and AI/ML solutions."
     },
     social: {
         github: "riyaax07",
-        email: "riyamaurya1214@gmail.com", // TODO: add your email
-        location: "Delhi NCR, India" // TODO: confirm/adjust
+        email: "riyamaurya1214@gmail.com",
+        location: "Sec-62A, Noida, India"
     },
     about: {
         title: "About Me",
-        description: "I'm a software engineering student based in Delhi NCR, actively contributing to open source through GSSoC'26. I work across the full stack — React, TypeScript, Node.js, MongoDB — and I'm building toward AI/ML and a long-term SWE career, alongside freelance web/content projects." // TODO: rewrite in your own voice
+        description: "I'm a Computer Science student at ABES Engineering College (2024–2028) based in Noida, India, actively contributing to open source through GSSoC'26 and OSCG'25. I build across the full stack with React, TypeScript, Flutter, FastAPI, and Supabase Realtime, and engineer computer vision solutions using Python, OpenCV, and TensorFlow."
     },
     experiences: [
-    {
-        position: "Open Source Contributor",
-        company: "GirlScript Summer of Code (GSSoC '26)",
-        period: "Jun 2026 – Present",
-        location: "Remote",
-        description: "Currently contributing to open-source repositories as part of GSSoC '26, building UI components, fixing bugs, and improving accessibility across React-based projects.",
-        responsibilities: [
-            "Contributing to React-based open-source projects",
-            "Fixing accessibility and UI bugs across multiple repos",
-            "Following Conventional Commits and PR workflows",
-            "Collaborating with maintainers through code reviews",
-            "Maintaining clean, reusable, and well-documented code"
-        ],
-        technologies: ["React", "TypeScript", "JavaScript", "Git", "GitHub", "MongoDB"]
-    },
-    {
-        position: "Open Source Contributor",
-        company: "GirlScript Summer of Code (GSSoC '25)",
-        period: "Jun 2025 – Aug 2025",
-        location: "Remote",
-        description: "Selected as an Open Source Contributor for GirlScript Summer of Code 2025, contributing to real-world projects by implementing features, fixing bugs, and collaborating with mentors and maintainers through GitHub.",
-        responsibilities: [
-            "Contributed to React-based open-source projects",
-            "Implemented new features and resolved UI/UX issues",
-            "Worked with Git, GitHub, branches, and pull request workflows",
-            "Collaborated with mentors and contributors through code reviews",
-            "Maintained clean, reusable, and well-documented code"
-        ],
-        technologies: ["React", "TypeScript", "JavaScript", "Git", "GitHub", "Firebase"]
-    },
-    {
-        position: "Open Source Contributor",
-        company: "Open Source Connect India (OSC)",
-        period: "2025",
-        location: "Remote",
-        description: "Participated in Open Source Connect India 2025 — a nationwide initiative to collaborate with India's growing open source community through real project contributions, expert-led sessions, and mentorship.",
-        responsibilities: [
-            "Worked on real open-source projects with community contributors",
-            "Attended expert-led learning sessions",
-            "Collaborated with developers across India",
-            "Earned recognition for open source contributions"
-        ],
-        technologies: ["Git", "GitHub", "Open Source", "Collaboration"]
-    },
-    {
-        position: "Young Innovator Intern",
-        company: "Scaler School of Technology",
-        period: "Mar 2025",
-        location: "Remote",
-        description: "Completed the Young Innovator Internship Challenge, gaining practical exposure to AI tools, product thinking, and collaborative software development while working on industry-inspired problem statements.",
-        responsibilities: [
-            "Explored AI-powered solutions for real-world problems",
-            "Collaborated with peers on project-based assignments",
-            "Researched emerging technologies and product strategies",
-            "Presented innovative technical solutions",
-            "Strengthened problem-solving and software development skills"
-        ],
-        technologies: ["Python", "AI Tools", "Git", "Product Thinking", "Research"]
-    },
-    {
-        position: "Software Engineering Virtual Experience",
-        company: "Walmart Global Tech",
-        period: "2025",
-        location: "Remote",
-        description: "Completed Walmart Global Tech's virtual software engineering program, solving practical engineering tasks and applying software development best practices to simulated real-world scenarios.",
-        responsibilities: [
-            "Completed hands-on software engineering tasks",
-            "Applied structured problem-solving techniques",
-            "Practiced debugging and code optimization",
-            "Strengthened understanding of software design principles"
-        ],
-        technologies: ["Java", "Software Engineering", "Problem Solving", "Git"]
-    }
-],
-        // TODO: PLACEHOLDER PROJECTS — replace each with your own real projects
+        {
+            position: "Open-Source Contributor",
+            company: "GirlScript Summer of Code (GSSoC'26)",
+            period: "2026",
+            location: "Remote",
+            description: "Diagnosed the root cause of 7+ issues and shipped the fix for a high-severity timezone race-condition bug affecting reading-streak data for all active users. Authored and merged 7 Pull Requests across 6+ open-source repositories, enhancing UI accessibility and core functionality.",
+            responsibilities: [
+                "Diagnosed root causes and resolved 7+ issues including timezone race conditions",
+                "Authored and merged 7 PRs across 6+ repositories",
+                "Enhanced UI accessibility and core application functionality",
+                "Collaborated with open-source maintainers via GitHub code reviews"
+            ],
+            technologies: ["React", "TypeScript", "JavaScript", "Git", "GitHub"]
+        },
+        {
+            position: "National-Level Hackathon",
+            company: "Industrython, IIIT Delhi",
+            period: "2026",
+            location: "New Delhi, India",
+            description: "Cleared Round 1 by engineering a scalable technical solution and pitching architectural feasibility to industry judges.",
+            responsibilities: [
+                "Engineered scalable technical architecture for complex problem statements",
+                "Pitched technical feasibility and design rationale to industry judges",
+                "Qualified through Round 1 in competitive national hackathon"
+            ],
+            technologies: ["System Design", "Scalability", "Architecture", "Python"]
+        },
+        {
+            position: "National-Level Hackathon",
+            company: "CodeFusion",
+            period: "2026",
+            location: "Remote",
+            description: "Collaborated within a 5-member cross-functional team to design Defensys, an automated server-side intrusion detection system. Engineered real-time threat-filtering algorithms achieving an 84% detection accuracy rate on target network logs.",
+            responsibilities: [
+                "Collaborated with 5-member cross-functional team to design Defensys intrusion detection system",
+                "Engineered real-time threat-filtering algorithms to identify and block cyberattacks",
+                "Achieved an 84% detection accuracy rate on target network logs"
+            ],
+            technologies: ["Python", "Intrusion Detection", "Algorithms", "Cybersecurity", "Network Logs"]
+        },
+        {
+            position: "Open-Source Contributor",
+            company: "Open Source Connect Global (OSCG'25)",
+            period: "2025",
+            location: "Remote",
+            description: "Merged 3+ production PRs across 2 open-source codebases, refactoring UI components and resolving application logic bugs.",
+            responsibilities: [
+                "Merged 3+ production PRs across 2 open-source repositories",
+                "Refactored UI components for improved usability and performance",
+                "Resolved core application logic bugs"
+            ],
+            technologies: ["React", "JavaScript", "Git", "GitHub", "UI Refactoring"]
+        },
+        {
+            position: "National Hackathon",
+            company: "Smart India Hackathon (SIH)",
+            period: "2025",
+            location: "India",
+            description: "Cleared the internal/college-level round of SIH 2025 by designing an innovative mobile application.",
+            responsibilities: [
+                "Designed and prototyped mobile application architecture",
+                "Cleared competitive internal college round for SIH 2025",
+                "Addressed real-world problem statement with intuitive UX"
+            ],
+            technologies: ["Flutter", "Mobile Development", "UI/UX", "Problem Solving"]
+        },
+        {
+            position: "Job Simulation",
+            company: "Walmart",
+            period: "2025",
+            location: "Remote",
+            description: "Analyzed keyword-level ad performance data to identify 3 underperforming campaigns and recommend strategic budget reallocation.",
+            responsibilities: [
+                "Analyzed ad performance data across keyword metrics",
+                "Identified underperforming campaigns to reduce ad spend waste",
+                "Formulated strategic budget reallocation recommendations"
+            ],
+            technologies: ["Data Analytics", "Performance Optimization", "Business Strategy"]
+        },
+        {
+            position: "Job Simulation",
+            company: "Deloitte Australia",
+            period: "2025",
+            location: "Remote",
+            description: "Built a data dashboard and forecast model from a sample dataset to surface multiple actionable business insights for a client.",
+            responsibilities: [
+                "Developed interactive data dashboards for client analytics",
+                "Created forecast models to predict trends from datasets",
+                "Extracted and presented actionable business insights"
+            ],
+            technologies: ["Data Dashboard", "Forecast Modeling", "Analytics"]
+        },
+        {
+            position: "Young Innovator Internship Challenge",
+            company: "Scaler School of Technology",
+            period: "2024",
+            location: "Remote",
+            description: "Applied more than 5 AI tools and marketing strategies in close collaboration with a cross-functional team to develop solutions for industry problem statements.",
+            responsibilities: [
+                "Applied 5+ AI tools to accelerate development and research",
+                "Collaborated with cross-functional team on industry challenge problems",
+                "Synthesized marketing strategies and technical solutions"
+            ],
+            technologies: ["AI Tools", "Marketing Strategies", "Cross-Functional Collaboration"]
+        }
+    ],
     projects: [
         { 
-  id: 1, 
-  title: "SafeGuard", 
-  category: "Full Stack / Mobile", 
-  technologies: "React, TypeScript, Vite, Supabase, TailwindCSS, Chrome Extension (MV3)", 
-  image: "/images/safeguard.png", // TODO: add a SafeGuard screenshot to public/images/
-  description: "A parental monitoring app with a React dashboard and Chrome Extension. Parents pair with a child's browser via Supabase as a shared data layer, monitoring activity in real time." 
-},
-        { id: 2, title: "HumSafar", category: "Full Stack", technologies: "React, TypeScript, Vite, Supabase, TailwindCSS", image: "/images/humsafar.png", description: "A smart family care application that simplifies remote caregiving through health tracking, reminders, and seamless communication" },
-        { id: 3, title: "TODO: Project 3 Title", category: "TODO: Category", technologies: "TODO: Tech, Stack, Here", image: "/images/eie.png", description: "TODO: describe this project." },
-        { id: 4, title: "TODO: Project 4 Title", category: "TODO: Category", technologies: "TODO: Tech, Stack, Here", image: "/images/gamekroy.png", description: "TODO: describe this project." },
-        { id: 5, title: "TODO: Project 5 Title", category: "TODO: Category", technologies: "TODO: Tech, Stack, Here", image: "/images/redxchess.png", description: "TODO: describe this project." },
-        { id: 6, title: "TODO: Project 6 Title", category: "TODO: Category", technologies: "TODO: Tech, Stack, Here", image: "/images/floodhub.png", description: "TODO: describe this project." },
-        { id: 7, title: "TODO: Project 7 Title", category: "TODO: Category", technologies: "TODO: Tech, Stack, Here", image: "/images/phoenix.png", description: "TODO: describe this project." },
-        { id: 8, title: "TODO: Project 8 Title", category: "TODO: Category", technologies: "TODO: Tech, Stack, Here", image: "/images/hektools.png", description: "TODO: describe this project." }
+            id: 1, 
+            title: "Portfolio Website", 
+            category: "Frontend & 3D Web", 
+            technologies: "React, TypeScript, Three.js, GSAP, Vercel", 
+            image: "/images/portfolio.png", 
+            description: "Engineered an interactive 3D portfolio application featuring 7 custom-animated scroll sections using Three.js and GSAP. Resolved 5+ deployment blockers and TypeScript strict-mode errors to achieve smooth 60 FPS rendering and production release on Vercel." 
+        },
+        { 
+            id: 2, 
+            title: "Humsafar", 
+            category: "Full Stack & Realtime", 
+            technologies: "React, TypeScript, Supabase Realtime", 
+            image: "/images/humsafar.png", 
+            description: "Designed a location-sharing platform with 2 role-based modes enabling real-time check-ins between parents and children living apart. Synced live location and check-in status across 100+ users in real time using Supabase realtime channels." 
+        },
+        { 
+            id: 3, 
+            title: "SafeGuard", 
+            category: "Full Stack & Chrome Extension", 
+            technologies: "React, TypeScript, Supabase, Chrome Extension (Manifest V3)", 
+            image: "/images/safeguard.png", 
+            description: "Developed a 2 role-based parental monitoring dashboard and Chrome extension communicating via Supabase REST API. Migrated backend off a no-code platform to self-managed Supabase, implementing Row Level Security (RLS) and realtime sync across 10 tables." 
+        },
+        { 
+            id: 4, 
+            title: "Human Activity Detection for Adaptive Surveillance Compression", 
+            category: "AI & Computer Vision", 
+            technologies: "Python, OpenCV, TensorFlow", 
+            image: "/images/project-1.webp", 
+            description: "Implemented an MVP that classifies more than 10 human activities in video frames using OpenCV and TensorFlow, laying groundwork for adaptive video compression. Debugged Windows-specific pipeline issues (FFmpeg PATH configuration) to ensure stable local frame processing." 
+        }
     ],
     contact: {
-        email: "riyamaurya1214@gmail.com", // TODO
+        email: "riyamaurya1214@gmail.com",
         github: "https://github.com/riyaax07",
-        linkedin: "www.linkedin.com/in/riya-maurya07", // TODO
-        instagram: "https://www.instagram.com/clover.7k" // TODO: remove if not used
+        linkedin: "https://www.linkedin.com/in/riya-maurya07",
+        instagram: "https://www.instagram.com/clover.7k"
     },
     skills: {
         develop: {
-            title: "SWE / FULL-STACK",
-            description: "Building full-stack apps and open-source contributions",
-            details: "React, TypeScript, Node.js, MongoDB, Firebase — building and contributing to full-stack projects.",
-            tools: ["React", "TypeScript", "Node.js", "MongoDB", "Firebase", "Express", "Git", "TailwindCSS"]
+            title: "FULL-STACK & MOBILE",
+            description: "Building scalable web & mobile apps and open-source contributions",
+            details: "React, TypeScript, JavaScript, Flutter, FastAPI, Supabase (Realtime, RLS), MongoDB, and SQL. Actively contributing to production open-source codebases.",
+            tools: ["React", "TypeScript", "JavaScript", "Flutter", "FastAPI", "Supabase", "MongoDB", "SQL", "Git", "GitHub"]
         },
         design: {
-            title: "AI / ML LEARNING",
-            description: "Building toward AI/ML internship readiness",
-            details: "Currently building a structured AI/ML learning path — Python, ML fundamentals, and applied projects.",
-            tools: ["Python", "Machine Learning", "Pandas", "NumPy", "scikit-learn"]
+            title: "AI, ML & 3D GRAPHICS",
+            description: "Computer vision models and interactive 3D web applications",
+            details: "Computer vision and machine learning with Python, OpenCV, and TensorFlow. Immersive 3D interactive web experiences using Three.js and GSAP with Google Cloud Platform (GCP).",
+            tools: ["Python", "TensorFlow", "OpenCV", "Machine Learning", "Three.js", "GSAP", "Google Cloud (GCP)", "REST APIs", "Chrome Extensions"]
         }
     }
 };
